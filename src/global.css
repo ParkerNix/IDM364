@@ -1,0 +1,64 @@
+/*setup*/
+body {
+	margin: 20px;
+	background-color: #f7f2f2;
+}
+
+p,
+a,
+button,
+input,
+textarea {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 14px;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	color: #d28daa;
+}
+
+a.active {
+	color: #d6296e;
+}
+
+h1 {
+	font-family: 'Lexend Deca', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	color: #d6296e;
+	font-size: 32px;
+}
+
+h2,
+h3 {
+	font-family: 'Lexend Deca', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	color: #d6296e;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+button {
+	color: #f7f2f2;
+	background-color: #10747f;
+	border: none;
+	padding: 7px 4px 8px;
+	border-radius: 10px;
+}
+
+input,
+textarea {
+	background-color: #f7f2f2;
+	min-height: 30px;
+	color: #d6296e;
+	border: none;
+	border-radius: 10px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+	resize: none;
+}
