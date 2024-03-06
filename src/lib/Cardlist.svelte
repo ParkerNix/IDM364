@@ -2,11 +2,11 @@
 	import Itemcard from './Itemcard.svelte';
 
 	type itemlist = {
-		itemName: string;
-		itemDesc: string;
-		itemPrice: string;
-		itemImg: string;
-		itemId: number;
+		name: string;
+		desc_short: string;
+		price: string;
+		img: string;
+		id: number;
 	};
 
 	export let itemList: itemlist[];
@@ -16,11 +16,11 @@
 <div class="cardlist">
 	{#each itemList as item}
 		<Itemcard
-			itemName={item.itemName}
-			itemDesc={item.itemDesc}
-			itemPrice={item.itemPrice}
-			itemImg={item.itemImg}
-			itemId={item.itemId}
+			itemName={item.name}
+			itemDesc={item.desc_short}
+			itemPrice={item.price}
+			itemImg={item.img}
+			itemId={item.id}
 			{type}
 		/>
 	{/each}
