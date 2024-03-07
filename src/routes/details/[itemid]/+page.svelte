@@ -1,41 +1,15 @@
-<script lang="ts" context="module">
-	import BBImg from '$lib/assets/Biddybuggy.png';
-
-	let listItems = [
-		{
-			itemName: 'Biddybuggy',
-			itemDesc:
-				'It is modeled after the Biddybud enemy debuting from Super Mario 3D Land. It has a pair of wing-shaped exhaust pipes that move when a boost mushroom is activated or when the vehicle runs over a boost panel.',
-			itemPrice: '4.00',
-			itemId: 1,
-			itemImg: BBImg
-		}
-	];
-
-	let currentitem: any = {
-		itemName: 'Biddybuggy',
-		itemDesc:
-			'It is modeled after the Biddybud enemy debuting from Super Mario 3D Land. It has a pair of wing-shaped exhaust pipes that move when a boost mushroom is activated or when the vehicle runs over a boost panel.',
-		itemPrice: '4.00',
-		itemId: 1,
-		itemImg: BBImg
-	};
-
-	// const { itemid } = page.params;
-
-	// console.log(itemid);
-
-	// currentitem = listItems.find(element => element.itemId === itemid);
+<script lang="ts">
+	export let data: any;
 </script>
 
 <div class="itemdetailed">
-	<img src={currentitem.itemImg} alt="Item Name" class="itemdetailed-img" />
+	<img src={data?.kart?.img} alt="Item Name" class="itemdetailed-img" />
 	<div class="itemdetailed-content">
-		<h2 class="itemdetailed-content-heading">{currentitem.itemName}</h2>
+		<h2 class="itemdetailed-content-heading">{data?.kart?.name}</h2>
 		<p class="itemdetailed-content-desc">
-			{currentitem.itemDesc}
+			{data?.kart?.desc_long}
 		</p>
-		<button>Add to Cart - ${currentitem.itemPrice}</button>
+		<button>Add to Cart - ${data?.kart?.price}</button>
 	</div>
 </div>
 

@@ -55,10 +55,10 @@ textarea {
 	color: #d6296e;
 	border: none;
 	border-radius: 10px;
-    width: 100%;
+	width: 100%;
 }
 
 textarea {
-    height: 100px;
+	height: 100px;
 	resize: none;
 }

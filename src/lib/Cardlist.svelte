@@ -4,6 +4,7 @@
 	type itemlist = {
 		name: string;
 		desc_short: string;
+		desc_long: string;
 		price: string;
 		img: string;
 		id: number;
@@ -17,7 +18,8 @@
 	{#each itemList as item}
 		<Itemcard
 			itemName={item.name}
-			itemDesc={item.desc_short}
+			itemDesc_short={item.desc_short}
+			itemDesc_long={item.desc_long}
 			itemPrice={item.price}
 			itemImg={item.img}
 			itemId={item.id}

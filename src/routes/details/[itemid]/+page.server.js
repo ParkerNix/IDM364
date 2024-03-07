@@ -1,11 +1,11 @@
 import { error } from '@sveltejs/kit';
 
-export async function load({ fetch }) {
-	const res = await fetch(`/api/allKarts`);
+export async function load({ params, fetch }) {
+	const res = await fetch(`/api/singleKart?id=${params.itemid}`);
     const data = await res.json();
 
 	if (res.status === 200) {
-		return {karts: data};
+		return {kart: data};
 	} else {
 		return {
             status: res.status, 

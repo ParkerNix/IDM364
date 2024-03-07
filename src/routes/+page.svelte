@@ -3,9 +3,7 @@
 
 	import BBImg from '$lib/assets/Biddybuggy.png';
 
-    export let data;
-
-    console.log(data)
+	export let data;
 
 	let listItems = data.karts;
 </script>
