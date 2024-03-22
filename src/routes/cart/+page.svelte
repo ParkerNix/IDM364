@@ -1,11 +1,15 @@
 <script lang="ts">
 	import Cardlist from '$lib/Cardlist.svelte';
 
-	import BBImg from '$lib/assets/Biddybuggy.png';
+	import { afterUpdate } from 'svelte';
 	import { cart } from '$lib/store';
-
-	let listItems = $cart;
-	console.log($cart);
 </script>
 
-<Cardlist itemList={listItems} type={'cart'} />
+{#if $cart.length != 0}
+	<Cardlist itemList={$cart} type={'cart'} />
+{:else}
+	<div class="empty-cart">
+		<h2>Nothing yet!</h2>
+		<p>You have nothing in your cart. Get shopping!</p>
+	</div>
+{/if}
