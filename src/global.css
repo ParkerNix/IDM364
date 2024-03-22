@@ -46,6 +46,16 @@ button {
 	border: none;
 	padding: 7px 4px 8px;
 	border-radius: 10px;
+
+	&:hover {
+		cursor: pointer;
+		background-color: #12909e;
+	}
+
+	&:active {
+		cursor: pointer;
+		background-color: #0f6670;
+	}
 }
 
 input,
